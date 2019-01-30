@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sign In</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="js/validation.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+	<script src="node_modules\validate-bootstrap.jquery\build\validate-bootstrap.jquery.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+<script>
+	$(document).ready(function() {
+    $('#loading').fadeOut("3000");
+	});
+</script>
+
+	<link rel="shortcut icon" type="image/x-icon" href="images/img.ico" />
+	<link rel="stylesheet" type="text/css" href="css/spwd1.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+</head>
+<body>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <div class="circle" id="loading"></div>
+  <div class="bg-image"></div>
+  <center><div class="page-header" id="hd">Stock Prediction</div></center>
+	<center><div id="d1" class="bg-text">
+	<form name="siform" id="siform" class="form" onsubmit="validation()">
+		<label>
+		<input class="ti" type="text" name="email" required/>
+		<div class="label-text">Email ID</div></label>
+		<label>
+		<input class="ti" type="password" name="password" required><div class="label-text">Password</div></label>
+		<button style="margin-right: 25px" class=" button"  type="submit" name="Signin" value="Sign In"><span>Sign In</span></button>
+		<button type="button" onclick="window.location.href='spwsu.html'">Sign Up</button>
+	</form>
+	
+	</div></center>
+</body>
+</html>
